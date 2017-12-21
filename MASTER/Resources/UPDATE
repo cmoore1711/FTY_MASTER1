@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Pi Update
-Exec=sudo sh /Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+Exec=sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
 Terminal=true
 Type=Application
 Icon=/home/pi/Downloads/iivilogobiggerDT.png
