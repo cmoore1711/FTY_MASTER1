@@ -1,4 +1,9 @@
 0 0 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+0 3 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+0 6 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+0 9 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
 0 12 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
 0 15 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+0 18 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+0 21 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
 @reboot sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
