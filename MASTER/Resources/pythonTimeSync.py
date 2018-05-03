@@ -10,7 +10,7 @@ while(True):
     try:
         cnx = mysql.connector.connect(user='cronos', password='zeusdad',host='10.10.9.107')
         cursor = cnx.cursor()
-        time.sleep(60)
+        
 
         selectTimeString = "SELECT now();"
         
@@ -21,6 +21,7 @@ while(True):
         changeTimeString = "sudo date -s " + '"' + currTime +'"'
         os.system(changeTimeString)
         cnx.close()
+        time.sleep(60)
     except:
         print('Error')
 print('All done')
