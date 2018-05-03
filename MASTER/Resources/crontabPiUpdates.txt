@@ -1,9 +1,29 @@
-0 0 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
-0 3 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
-0 6 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
-0 9 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
-0 12 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
-0 15 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
-0 18 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
-0 21 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+#CHANGED on 5/5/2018 CBM
+
+# m h  dom mon dow   command
+# update system time twice a day - at 05:29 & 17:29
+29 05,17 * * * /home/cronScripts/timeSet.sh
+
+0 0 * * 7  sudo apt-get -y update && sudo apt-get -y upgrade
+
+
+*/5 * * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh 
 @reboot sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+@reboot  sudo python3 /home/pi/Desktop/FTY_MASTER1/MASTER/Resources/pythonTimeS$
+@reboot  sudo python3 /home/pi/Desktop/FTY_MASTER1/MASTER/Resources/updateFTY.py
+@reboot sudo python Adafruit_Python_SSD1306/examples/stats.py
+
+
+
+
+
+
+#0 0 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+#0 3 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+#0 6 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+#0 9 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+#0 12 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+#0 15 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+#0 18 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+#0 21 * * *  sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
+#@reboot sudo sh Desktop/FTY_MASTER1/MASTER/Resources/piUpdate.sh
