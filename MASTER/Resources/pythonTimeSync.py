@@ -21,4 +21,4 @@ while(True):
         changeTimeString = "sudo date -s " + '"' + currTime +'"'
         os.system(changeTimeString)
         cnx.close()
-print('All done')    
+print('All done')
