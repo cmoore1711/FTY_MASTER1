@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=ChangePiName
-Exec= sudo python3 /home/pi/Desktop/FTY_MASTER1/MASTER/Resources/renamePiWithArgs.py
+Exec= sudo python3 /home/pi/Desktop/FTY_MASTER1/MASTER/Resources/renamePiWithArgsNoPass.py
 Type=Application
 Encoding=UTF-8
 Terminal=true
